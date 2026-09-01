@@ -1,0 +1,51 @@
+{
+  "name": "eidos-language-os",
+  "version": "1.0.0",
+  "description": "Eidos Language OS - Unified Cross-Platform Language Learning App (Web, Android APK, Desktop Tauri)",
+  "author": "Eidos Language Team",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "apk:sync": "tsx scripts/apk-pipeline.ts --no-build",
+    "apk:bump": "tsx scripts/apk-pipeline.ts --no-build",
+    "apk:build": "tsx scripts/apk-pipeline.ts",
+    "apk:deploy-live": "tsx scripts/apk-pipeline.ts --deploy",
+    "apk:publish-live": "tsx scripts/apk-pipeline.ts --publish",
+    "desktop:deploy-live": "tsx scripts/desktop-pipeline.ts --deploy",
+    "desktop:publish-live": "tsx scripts/desktop-pipeline.ts --publish",
+    "desktop:bump": "tsx scripts/desktop-pipeline.ts --no-build",
+    "desktop:clean": "tsx scripts/desktop-pipeline.ts --clean-only",
+    "desktop:tauri:dev": "tauri dev",
+    "desktop:tauri:build": "tauri build",
+    "lint": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/core": "^8.5.0",
+    "@capacitor/haptics": "^8.0.2",
+    "@tauri-apps/api": "^2.11.1",
+    "lucide-react": "^0.563.0",
+    "motion": "^12.38.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "sonner": "^2.0.7"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@tauri-apps/cli": "^2.11.4",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "@vitejs/plugin-react": "^5.0.0",
+    "autoprefixer": "^10.5.4",
+    "postcss": "^8.5.25",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.21.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
+}
