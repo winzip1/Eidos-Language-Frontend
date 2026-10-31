@@ -6,7 +6,7 @@
 import type { AuthUser } from '../types';
 
 export const PRODUCTION_API_URL = 'https://eidos-language-production.up.railway.app';
-export const LOCAL_API_URL = 'http://localhost:8000';
+export const LOCAL_API_URL = 'http://localhost:8002';
 
 export const AUTH_TOKEN_KEY = 'eidos_token';
 export const LEGACY_AUTH_TOKEN_KEY = 'eidos_auth_token';
